@@ -10,6 +10,14 @@ jobs:
     permissions:
       contents: write
     steps:
+      - name: Notify start
+        run: |
+          curl -s \
+            -H "Title: WV Fly Guides update started" \
+            -H "Tags: fishing,arrows_counterclockwise" \
+            -d "Friday conditions refresh kicked off $(date -u +'%Y-%m-%d %H:%M UTC')." \
+            "https://ntfy.sh/${{ secrets.NTFY_TOPIC }}" || true
+
       - uses: actions/checkout@v4
 
       - name: Set up Python
@@ -32,3 +40,23 @@ jobs:
           git add .
           git diff --staged --quiet || git commit -m "Auto-update: $(date +'%Y-%m-%d') Friday conditions refresh"
           git push
+
+      - name: Notify complete
+        if: always()
+        run: |
+          RUN_URL="https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          if [ "${{ job.status }}" = "success" ]; then
+            TITLE="WV Fly Guides updated"
+            TAGS="white_check_mark,fishing"
+            PRIORITY="default"
+          else
+            TITLE="WV Fly Guides update FAILED"
+            TAGS="x,rotating_light"
+            PRIORITY="high"
+          fi
+          curl -s \
+            -H "Title: $TITLE" \
+            -H "Tags: $TAGS" \
+            -H "Priority: $PRIORITY" \
+            -d "Status: ${{ job.status }}. Details: $RUN_URL" \
+            "https://ntfy.sh/${{ secrets.NTFY_TOPIC }}" || true
