@@ -62,8 +62,9 @@ Update the guide with the following changes:
 2. Update any water temp stats in the hero section
 3. Update schedule notes to reflect current flow and temp conditions
 4. Update spot descriptions if conditions warrant (e.g. high/low water tactics)
-5. Keep all structure, styling, and non-conditions content exactly the same
-6. Return ONLY the complete updated JSX file with no explanation, no markdown fences, no preamble
+5. Update the conditions banner to include a 'Last updated: {today_friendly}' line, for example: 'Last updated: Friday, June 27 2025'. Place it as the rightmost item in the conditions band at the top of the guide, in the same small monospace font style as the other band items, using a neutral color like the existing SAND or MIST variable.
+6. Keep all structure, styling, and non-conditions content exactly the same
+7. Return ONLY the complete updated JSX file with no explanation, no markdown fences, no preamble
 
 Important: if gauge data shows unavailable, keep existing conditions text unchanged for that metric."""
 
@@ -100,6 +101,11 @@ conditions_text = "\n".join([
 ])
 
 print(f"Conditions fetched:\n{conditions_text}")
+
+# Friendly "Friday, June 27 2025" style date for the guide banners (no platform-specific %-d)
+_d = date.today()
+today_friendly = _d.strftime("%A, %B ") + f"{_d.day} {_d.year}"
+print(f"Guide banner date: {today_friendly}")
 
 # Potomac/Shenandoah guide
 potomac_path = "guides/PotomacShenandoah/FlyGuide.jsx"

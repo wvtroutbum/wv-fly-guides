@@ -68,6 +68,25 @@ export default function App() {
       <div style={{ paddingTop: BAR_HEIGHT }}>
         <ActiveGuide />
       </div>
+
+      <footer
+        style={{
+          textAlign: "center",
+          fontSize: 11,
+          fontFamily: "monospace",
+          color: "#5C6B50",
+          padding: 8,
+          background: BAR,
+        }}
+      >
+        Last deployed:{" "}
+        {new Date().toLocaleDateString("en-US", {
+          weekday: "long",
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+        })}
+      </footer>
     </>
   );
 }
