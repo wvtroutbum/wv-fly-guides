@@ -339,19 +339,19 @@ hr.mg-div{border:none;border-top:1px solid rgba(0,0,0,.1);margin:22px 0;}
 // ── DATA ────────────────────────────────────────────────────────────────────
 
 const TROUT_SCHEDULE = [
-  { time:"5:30–8:30",  window:"Dawn / Cool", tactic:"Elk Hair Caddis, Sulphur dry",   note:"Best surface action while temps are down; fish stack in riffles above pools", hot:true },
-  { time:"8:30–11:00", window:"Late morning", tactic:"Nymph — BWO, Pheasant Tail",    note:"Sub-surface as sun hits; drift seams below big limestone ledges", hot:false },
-  { time:"11:00–16:00",window:"Midday — avoid",tactic:"Rest or move to tailwaters",   note:"Water can reach critical temps — stop targeting trout above 68°F",    hot:false, warn:true },
-  { time:"16:00–18:00",window:"Afternoon cool",tactic:"Caddis nymph, soft hackle",    note:"Temps drop as canyon shade kicks in; fish emerge from deep slots",    hot:false },
-  { time:"18:00–dusk", window:"Evening hatch", tactic:"Sulphur, Light Cahill, Caddis",note:"Most reliable dry-fly window; spinner falls on flat tailouts",        hot:true },
+  { time:"5:30–8:30",  window:"Dawn / Cool", tactic:"Elk Hair Caddis, Sulphur dry",   note:"Best surface action while temps are down; South Branch running 158 CFS — fish stack in riffles above pools and in current seams", hot:true },
+  { time:"8:30–11:00", window:"Late morning", tactic:"Nymph — BWO, Pheasant Tail",    note:"Sub-surface as sun hits; drift seams below big limestone ledges; 158 CFS on main stem pushes fish to softer water edges", hot:false },
+  { time:"11:00–16:00",window:"Midday — avoid",tactic:"Rest or move to tailwaters",   note:"Water can reach critical temps — stop targeting trout above 68°F; temp sensor unavailable, carry a stream thermometer",    hot:false, warn:true },
+  { time:"16:00–18:00",window:"Afternoon cool",tactic:"Caddis nymph, soft hackle",    note:"Temps drop as canyon shade kicks in; fish emerge from deep slots; North Fork at 15.1 CFS running low and clear — finesse presentation required",    hot:false },
+  { time:"18:00–dusk", window:"Evening hatch", tactic:"Sulphur, Light Cahill, Caddis",note:"Most reliable dry-fly window; spinner falls on flat tailouts; low clear water on North Fork demands long fine leaders",        hot:true },
 ];
 
 const BASS_SCHEDULE = [
-  { time:"5:30–8:00",  window:"Dawn topwater", tactic:"Deer-hair bug, Gurgler",       note:"Prime popper window on the Trough and Moorefield flats; work gravel bars and log structure", hot:true },
-  { time:"8:00–10:00", window:"Morning",        tactic:"Crayfish, Clouser Minnow",    note:"Shift sub-surface as temps climb; drift rocky chutes and ledge edges", hot:true },
-  { time:"10:00–14:00",window:"Mid-morning",    tactic:"Woolly Bugger, helgramite",   note:"Fast strips through deeper Trough pools; shade-holding fish on limestone ledge breaks", hot:false },
-  { time:"14:00–17:00",window:"Midday",         tactic:"Deep nymph, helgramite",      note:"Bounce bottom in the coldest slots; overcast = streamer opportunity any time", hot:false },
-  { time:"17:00–dark", window:"Evening",        tactic:"Topwater / big streamer",     note:"Second topwater window; evening bite on the South Branch main stem can be electric", hot:true },
+  { time:"5:30–8:00",  window:"Dawn topwater", tactic:"Deer-hair bug, Gurgler",       note:"Prime popper window on the Trough and Moorefield flats; South Branch at 158 CFS — good wading depth on gravel bars and log structure", hot:true },
+  { time:"8:00–10:00", window:"Morning",        tactic:"Crayfish, Clouser Minnow",    note:"Shift sub-surface as temps climb; 158 CFS provides excellent riffle energy through rocky chutes and ledge edges — ideal Clouser depth", hot:true },
+  { time:"10:00–14:00",window:"Mid-morning",    tactic:"Woolly Bugger, helgramite",   note:"Fast strips through deeper Trough pools; 158 CFS keeps shade-holding fish active on limestone ledge breaks; water temp sensor unavailable — monitor conditions", hot:false },
+  { time:"14:00–17:00",window:"Midday",         tactic:"Deep nymph, helgramite",      note:"Bounce bottom in the coldest slots; 158 CFS means good oxygenation in fast chutes; overcast = streamer opportunity any time", hot:false },
+  { time:"17:00–dark", window:"Evening",        tactic:"Topwater / big streamer",     note:"Second topwater window; South Branch main stem at 158 CFS offers ideal evening wading on the Moorefield flats — electric topwater bite", hot:true },
 ];
 
 const TROUT_HATCHES = [
@@ -393,8 +393,8 @@ const TROUT_SPOTS = [
     river:"North Fork of the South Branch",
     type:"trout",
     tags:[{label:"Stocked + Holdovers",cls:"stocked"},{label:"Wading",cls:"wade"}],
-    desc:"WV DNR stocks this stretch heavily January through June. The boulder-field habitat upstream of the Smoke Hole Rd bridge holds impressive numbers of fish and some wild holdovers. Access off Rt 28/55 at numerous pull-offs south of Cabins.",
-    note:"Fish the shaded canyon walls in the morning; spinner falls on the broad tailout below the bridge at dusk are outstanding.",
+    desc:"WV DNR stocks this stretch heavily January through June. The boulder-field habitat upstream of the Smoke Hole Rd bridge holds impressive numbers of fish and some wild holdovers. Access off Rt 28/55 at numerous pull-offs south of Cabins. Currently running at 15.1 CFS — low and clear conditions; expect wary fish and demand careful wade approaches.",
+    note:"At 15.1 CFS the North Fork is low and gin-clear — use long fine leaders (5X–6X), approach from downstream, and focus on shaded canyon walls in the morning. Spinner falls on the broad tailout below the bridge at dusk are outstanding.",
     warn:null,
   },
   {
@@ -402,8 +402,8 @@ const TROUT_SPOTS = [
     river:"South Branch Potomac",
     type:"trout",
     tags:[{label:"USFS / Public",cls:"access"},{label:"Float or Wade",cls:"float"}],
-    desc:"Upper end of the Smoke Hole Canyon float. Walk-in access from the USFS Big Bend Campground. Clear limestone water with excellent cobblestone structure. Petersburg Hatchery golden rainbow trout occasionally appear this far down.",
-    note:"14-mile float to Petersburg — commit to it or do a short wade up from Big Bend. Best trout action above the canyon mouth in early morning.",
+    desc:"Upper end of the Smoke Hole Canyon float. Walk-in access from the USFS Big Bend Campground. Clear limestone water with excellent cobblestone structure. Petersburg Hatchery golden rainbow trout occasionally appear this far down. South Branch at Moorefield is reading 158 CFS — upstream canyon flows are proportionally lower but this stretch should have fishable wading depth.",
+    note:"14-mile float to Petersburg — commit to it or do a short wade up from Big Bend. Best trout action above the canyon mouth in early morning. Water temp sensor unavailable — carry a stream thermometer and stop targeting trout above 68°F.",
     warn:null,
   },
   {
@@ -411,9 +411,9 @@ const TROUT_SPOTS = [
     river:"South Branch Potomac",
     type:"trout",
     tags:[{label:"Stocked",cls:"stocked"},{label:"Walk-In Wade",cls:"wade"}],
-    desc:"The Petersburg State Fish Hatchery releases golden rainbow trout (the WV signature strain developed here) into the South Branch below Petersburg. Access at the Rt 220 bridge pull-off on the north side. Stocking runs January–June; holdovers linger in the deeper pools through summer.",
-    note:"Water temps can get marginal here in late June — target the dawn and dusk windows only. Deep slots below the bridge hold the largest fish.",
-    warn:"Check water temp before wading — 68°F is the target max for targeting trout. Stop fishing if above 70°F.",
+    desc:"The Petersburg State Fish Hatchery releases golden rainbow trout (the WV signature strain developed here) into the South Branch below Petersburg. Access at the Rt 220 bridge pull-off on the north side. Stocking runs January–June; holdovers linger in the deeper pools through summer. South Branch running 158 CFS at Moorefield gauge — wading conditions near Petersburg should be comfortable on the gravel flats.",
+    note:"Water temp sensor is currently unavailable for this section — carry a thermometer and target the dawn and dusk windows only. Deep slots below the bridge hold the largest fish. At current late-June flows, concentrate on shaded deep runs during midday.",
+    warn:"Check water temp before wading — 68°F is the target max for targeting trout. Stop fishing if above 70°F. Temp gauge currently unavailable; manual thermometer required.",
   },
 ];
 
@@ -423,8 +423,8 @@ const BASS_SPOTS = [
     river:"South Branch Potomac",
     type:"bass",
     tags:[{label:"Float Only",cls:"float"},{label:"Trophy Water",cls:"wild"}],
-    desc:"Six miles of steep-walled canyon with no road access — only a CSX rail line. This is the South Branch's crown jewel for smallmouth. Deep pools separated by Class I–II ledge drops hold trophy fish. Access: put in at Trough Rd (off Rt 220) and take out downstream at WVDNR access or Springfield.",
-    note:"Guided float trips available through Breezewood Adventures in Moorefield (call 2+ weeks ahead in summer). Plan a full day minimum — this is not a half-day float.",
+    desc:"Six miles of steep-walled canyon with no road access — only a CSX rail line. This is the South Branch's crown jewel for smallmouth. Deep pools separated by Class I–II ledge drops hold trophy fish. Access: put in at Trough Rd (off Rt 220) and take out downstream at WVDNR access or Springfield. South Branch reading 158 CFS at Moorefield — an excellent floatable level for the Trough with good pool depth and active ledge drops.",
+    note:"At 158 CFS the Trough is fishing at a prime summer level — pools have depth, ledge drops are energized, and fish are holding in defined seams. Guided float trips available through Breezewood Adventures in Moorefield (call 2+ weeks ahead in summer). Plan a full day minimum.",
     warn:null,
   },
   {
@@ -432,8 +432,8 @@ const BASS_SPOTS = [
     river:"South Branch Potomac",
     type:"bass",
     tags:[{label:"Public Access",cls:"access"},{label:"Wade",cls:"wade"}],
-    desc:"Convenient wade access right in Moorefield below the US 220 bridge. Gravel bars and riffle-pool sequences with excellent smallmouth populations. Good topwater water in the morning before heat builds. Less pressure than the Trough but solid fish to 16\".",
-    note:"Park at the WVDNR public access pull-off on the east bank. Easy wade, good for an evening session after a day in the shop.",
+    desc:"Convenient wade access right in Moorefield below the US 220 bridge. Gravel bars and riffle-pool sequences with excellent smallmouth populations. At 158 CFS the South Branch is at a very comfortable wading level here — gravel bars are exposed, riffle crossings are straightforward, and fish are actively holding in current seams. Good topwater water in the morning before heat builds. Less pressure than the Trough but solid fish to 16\".",
+    note:"Park at the WVDNR public access pull-off on the east bank. At current 158 CFS, wading is easy across the upper gravel bars — excellent conditions for an evening session after a day in the shop.",
     warn:null,
   },
   {
@@ -441,8 +441,8 @@ const BASS_SPOTS = [
     river:"South Branch Potomac",
     type:"bass",
     tags:[{label:"Public Road Access",cls:"access"},{label:"Float Put-In",cls:"float"}],
-    desc:"Classic float put-in for the lower South Branch smallmouth stretch. Riffle-to-pool structure with good crayfish habitat on the gravel flats. Overcast days can trigger excellent streamer action through this section. Also a strong wading spot from the bridge downstream for 0.5 miles.",
-    note:"Start point for guided floats down to Moorefield. Kellan Snyder at Breezewood Adventures launched their first season here in 2021.",
+    desc:"Classic float put-in for the lower South Branch smallmouth stretch. Riffle-to-pool structure with good crayfish habitat on the gravel flats. At 158 CFS the current is well-defined through the riffle chutes — ideal for swinging Clousers and crayfish patterns through the downstream ledges. Overcast days can trigger excellent streamer action through this section. Also a strong wading spot from the bridge downstream for 0.5 miles.",
+    note:"Start point for guided floats down to Moorefield. At 158 CFS expect a brisk float pace — read the ledge drops carefully and work the eddies behind the larger boulders where fish stack at this flow.",
     warn:null,
   },
   {
@@ -450,228 +450,11 @@ const BASS_SPOTS = [
     river:"South Branch Potomac",
     type:"bass",
     tags:[{label:"Float (Spring–Early Summer)",cls:"float"},{label:"Trout + Bass",cls:"wild"}],
-    desc:"One of the few stretches in WV where you can target both trout and smallmouth on the same float. Water levels must be adequate — summer floats are limited by low flow. When fishable, this is arguably the most spectacular canyon scenery in the state.",
-    note:"Check USGS gauge at Cabins before committing — Class II+ Landslide Rapid requires confident water reading. Two-to-three-day float for the full run.",
-    warn:"Late June flows may be too low for a safe float — confirm gauge before trip.",
+    desc:"One of the few stretches in WV where you can target both trout and smallmouth on the same float. Water levels must be adequate — summer floats are limited by low flow. North Fork at Cabins is reading 15.1 CFS and the main stem upper canyon is proportionally low; confirm South Branch gauge levels above the canyon before committing to a float. When fishable, this is arguably the most spectacular canyon scenery in the state.",
+    note:"Check USGS gauge at Cabins (currently 15.1 CFS — borderline for upper canyon float) before committing — Class II+ Landslide Rapid requires confident water reading. Two-to-three-day float for the full run.",
+    warn:"Current North Fork flow of 15.1 CFS suggests upper canyon may be marginal for a safe float — confirm the South Branch above the canyon on the USGS gauge before launching.",
   },
 ];
 
 const REMINDERS = [
-  { icon:"🌡️", title:"Trout Temp Cutoff",        body:"Stop targeting trout above 68°F water temp. In late June the South Branch main stem can push this by mid-morning. The North Fork runs cooler — prioritize it on hot days.", alert:true },
-  { icon:"🎣", title:"WV Fishing License",         body:"Required for all anglers 15+. Annual license at wvdnr.gov or any local sporting goods. No special trout stamp required for stocked streams, but check current regs.", alert:false },
-  { icon:"🏞️", title:"Golden Rainbow Trout",       body:"WV's signature strain developed at the Petersburg Hatchery. Stunning gold/yellow coloration. Catch-and-release encouraged on holdovers — these fish don't reproduce naturally.", alert:false },
-  { icon:"🛶", title:"The Trough — Shuttle Plan",  body:"Float-only — no road access. Breezewood Adventures (Moorefield) runs shuttles and guided trips. Book 2+ weeks ahead in summer. Bring all food/water for a full day.", alert:false },
-  { icon:"☁️", title:"Overcast = Prime Time",      body:"Both smallmouth and trout feed more aggressively under cloud cover. Keep a streamer or popper rod rigged when skies gray up — the bite can flip in minutes.", alert:false },
-  { icon:"🥾", title:"Trough Wading / Canyon",     body:"Trough is float-only. Smoke Hole boulders are slick. Felt soles or studs strongly recommended. The North Fork near Cabins has a wide boulder field — go slow.", alert:false },
-  { icon:"🐟", title:"Species ID — Trough",        body:"Both smallmouth and rock bass are common. Smallmouth: bronze body, red eyes, horizontal stripes, jaw ends below eye. Rock bass: red iris, mottled, smaller.", alert:false },
-  { icon:"📋", title:"Private Land Awareness",     body:"South Branch corridor has significant private land interspersed with public. Stick to river corridor while floating. Don't cross fences or trespass on farm fields.", alert:false },
-];
-
-const TABS = ["Schedule","Hatches","Leaders","Spots","Reminders"];
-
-export default function MoorefieldFlyGuide() {
-  const [species, setSpecies] = useState("bass"); // "trout" | "bass"
-  const [tab, setTab]         = useState(0);
-
-  const sc = species === "trout" ? "trout" : "bass";
-
-  const schedule = species === "trout" ? TROUT_SCHEDULE : BASS_SCHEDULE;
-  const hatches  = species === "trout" ? TROUT_HATCHES  : BASS_HATCHES;
-  const leaders  = species === "trout" ? TROUT_LEADERS  : BASS_LEADERS;
-  const spots    = species === "trout" ? TROUT_SPOTS    : BASS_SPOTS;
-
-  return (
-    <div className="mg-root">
-      <style>{css}</style>
-
-      {/* BAND */}
-      <div className="mg-band">
-        <span className="mg-band-label">Hardy County · South Branch</span>
-        <div className="mg-band-item"><div className="mg-dot" /><span>South Branch: Low & clear · Summer pattern</span></div>
-        <div className="mg-band-item"><div className="mg-dot" /><span>North Fork: Cool · Best trout water late June</span></div>
-        <div className="mg-band-item"><div className="mg-dot note" /><span>Trout: Target dawn & dusk only — check temps</span></div>
-        <div className="mg-band-item"><div className="mg-dot" /><span>Trough: Float-only · Book shuttle ahead</span></div>
-      </div>
-
-      {/* HERO */}
-      <div className="mg-hero">
-        <div className="mg-eyebrow">Moorefield, WV · Hardy County · South Branch Watershed · Late June</div>
-        <h1>South Branch<br /><em>Field Guide</em></h1>
-        <div className="mg-subtitle">Smoke Hole · The Trough · North Fork · Petersburg — West Virginia Highlands</div>
-        <div className="mg-stats">
-          <div className="mg-stat"><span className="mg-stat-val">3 Rivers</span><span className="mg-stat-lbl">Watersheds</span></div>
-          <div className="mg-stat"><span className="mg-stat-val">2 Species</span><span className="mg-stat-lbl">Trout & Smallmouth</span></div>
-          <div className="mg-stat"><span className="mg-stat-val">Dawn / Dusk</span><span className="mg-stat-lbl">Prime Windows</span></div>
-          <div className="mg-stat"><span className="mg-stat-val">Class I–II+</span><span className="mg-stat-lbl">Trough Whitewater</span></div>
-        </div>
-      </div>
-
-      {/* SPECIES SWITCHER */}
-      <div className="mg-species-bar">
-        <button
-          className={`mg-sp-btn${species==="trout"?" active trout":""}`}
-          onClick={() => { setSpecies("trout"); setTab(0); }}
-        >🎣 Trout</button>
-        <button
-          className={`mg-sp-btn${species==="bass"?" active bass":""}`}
-          onClick={() => { setSpecies("bass"); setTab(0); }}
-        >🐟 Smallmouth Bass</button>
-      </div>
-
-      {/* BODY */}
-      <div className="mg-body">
-        <div className="mg-tabs">
-          {TABS.map((t, i) => (
-            <button
-              key={t}
-              className={`mg-tab${tab===i?" active "+sc:""}`}
-              onClick={() => setTab(i)}
-            >{t}</button>
-          ))}
-        </div>
-
-        <div className="mg-panel">
-
-          {/* SCHEDULE */}
-          {tab === 0 && (
-            <>
-              <div className="mg-section-head">
-                {species==="trout" ? "Trout Daily Schedule" : "Smallmouth Daily Schedule"}
-              </div>
-              <div className="mg-section-sub">
-                {species==="trout"
-                  ? "Late June · North Fork & Upper South Branch · Water temp is the variable"
-                  : "Late June · South Branch Main Stem, Trough & Moorefield Flats"}
-              </div>
-              {species==="trout" && (
-                <div className="mg-season-note">
-                  <strong>Late June trout reality:</strong> The North Fork of the South Branch runs cooler than the main stem and holds the best trout water through June. Main stem water temps can reach 68–70°F by midday — stop targeting trout above 68°F. Dawn and dusk are non-negotiable for trout in late summer.
-                </div>
-              )}
-              <div style={{overflowX:"auto"}}>
-                <table className="mg-sched">
-                  <thead><tr><th>Time</th><th>Window</th><th>Tactic</th><th>Notes</th></tr></thead>
-                  <tbody>
-                    {schedule.map((r,i) => (
-                      <tr key={i} className={r.hot?"mg-hot":""}>
-                        <td>{r.time}</td>
-                        <td>
-                          {r.window}
-                          {r.hot && <div className="mg-tip">★ Prime window</div>}
-                          {r.warn && <div className="mg-warm-warn">⚠ Temp check required</div>}
-                        </td>
-                        <td>{r.tactic}</td>
-                        <td>{r.note}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-            </>
-          )}
-
-          {/* HATCHES */}
-          {tab === 1 && (
-            <>
-              <div className="mg-section-head">
-                {species==="trout" ? "Late June Trout Hatches" : "Smallmouth Food Sources"}
-              </div>
-              <div className="mg-section-sub">
-                {species==="trout"
-                  ? "North Fork & South Branch · Key imitations"
-                  : "South Branch & Trough · Primary forage and matching patterns"}
-              </div>
-              <div className="mg-hatch-grid">
-                {hatches.map((h,i) => (
-                  <div className="mg-hatch-card" key={i}>
-                    <div className="mg-hatch-name">{h.name}</div>
-                    <div className="mg-hatch-latin">{h.latin}</div>
-                    <div className="mg-hatch-detail">{h.note}</div>
-                    <div><span className="mg-hatch-window">{h.time}</span></div>
-                    <div className="mg-hatch-flies">{h.flies}</div>
-                  </div>
-                ))}
-              </div>
-            </>
-          )}
-
-          {/* LEADERS */}
-          {tab === 2 && (
-            <>
-              <div className="mg-section-head">
-                {species==="trout" ? "Trout Leader & Tippet" : "Bass Leader & Tippet"}
-              </div>
-              <div className="mg-section-sub">Match to water type and fly size</div>
-              <div style={{overflowX:"auto"}}>
-                <table className="mg-leader">
-                  <thead><tr><th>Condition</th><th>Leader</th><th>Tippet</th><th>Flies</th><th>Notes</th></tr></thead>
-                  <tbody>
-                    {leaders.map((r,i) => (
-                      <tr key={i}>
-                        <td>{r.cond}</td>
-                        <td><span className="mg-code">{r.len}</span></td>
-                        <td><span className="mg-code">{r.tip}</span></td>
-                        <td style={{fontSize:11}}>{r.flies}</td>
-                        <td style={{fontSize:11,color:STEEL}}>{r.note}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-            </>
-          )}
-
-          {/* SPOTS */}
-          {tab === 3 && (
-            <>
-              <div className="mg-section-head">
-                {species==="trout" ? "Trout Access Points" : "Smallmouth Access Points"}
-              </div>
-              <div className="mg-section-sub">Hardy County & surrounding watershed</div>
-              {spots.map((s,i) => (
-                <div className="mg-spot-card" key={i}>
-                  <div className={`mg-spot-hd ${s.type==="trout"?"trout":s.type==="bass"?"bass":"both"}`}>
-                    <div>
-                      <div className="mg-spot-name">{s.name}</div>
-                      <div className="mg-spot-meta">{s.river}</div>
-                    </div>
-                    <div className="mg-tags">
-                      {s.tags.map((t,j) => <span key={j} className={`mg-tag ${t.cls}`}>{t.label}</span>)}
-                    </div>
-                  </div>
-                  <div className="mg-spot-body">
-                    <p>{s.desc}</p>
-                    {s.note && <div className="mg-spot-note">💡 {s.note}</div>}
-                    {s.warn && <div className="mg-spot-warn">⚠ {s.warn}</div>}
-                  </div>
-                </div>
-              ))}
-            </>
-          )}
-
-          {/* REMINDERS */}
-          {tab === 4 && (
-            <>
-              <div className="mg-section-head">Field Reminders</div>
-              <div className="mg-section-sub">Safety, regs, logistics — Hardy County</div>
-              <div className="mg-remind-grid">
-                {REMINDERS.map((r,i) => (
-                  <div className={`mg-remind-card${r.alert?" alert":""}`} key={i}>
-                    <div className="mg-remind-icon">{r.icon}</div>
-                    <div className="mg-remind-title">{r.title}</div>
-                    <div className="mg-remind-body">{r.body}</div>
-                  </div>
-                ))}
-              </div>
-            </>
-          )}
-
-        </div>
-      </div>
-
-      <div className="mg-footer">
-        Mountaineer Maker · Moorefield / Hardy County, WV · South Branch Potomac Watershed
-      </div>
-    </div>
-  );
-}
+  { icon:"🌡️", title:"Trout Temp Cutoff",        body:"Stop targeting trout above 68°F water temp. In late June the South Branch main stem can push this by mid-morning.
