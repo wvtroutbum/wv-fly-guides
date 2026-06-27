@@ -69,10 +69,26 @@ Important: if gauge data shows unavailable, keep existing conditions text unchan
 
     message = client.messages.create(
         model="claude-sonnet-4-6",
-        max_tokens=8000,
+        max_tokens=16000,
         messages=[{"role": "user", "content": prompt}]
     )
-    return message.content[0].text
+    result = message.content[0].text
+
+    # Guard: reject truncated output
+    if message.stop_reason == "max_tokens":
+        raise RuntimeError(
+            f"Claude hit max_tokens limit updating {guide_name} — "
+            f"output truncated. File not written. Increase max_tokens."
+        )
+
+    # Guard: reject output missing a valid export
+    if "export default" not in result:
+        raise RuntimeError(
+            f"Claude output for {guide_name} is missing 'export default' — "
+            f"likely malformed. File not written."
+        )
+
+    return result
 
 # ── MAIN ────────────────────────────────────────────────────────────────────
 
