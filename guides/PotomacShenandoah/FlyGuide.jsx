@@ -338,12 +338,12 @@ const styles = `
 `;
 
 const SCHEDULE = [
-  { time: "5:00–7:00", window: "Dawn", tactic: "Poppers & deer-hair bugs", note: "Work shallow banks and log jams before light; topwater action peaks in first 45 min. South Branch running 158 CFS — good wading depth with fishable current", hot: true },
-  { time: "7:00–9:30", window: "Morning", tactic: "Crayfish & Clouser Minnow", note: "Shift to sub-surface; Potomac at 3.84 CFS gauge — extremely low and clear, drop to lighter tippet and smaller patterns for spooky fish", hot: true },
-  { time: "9:30–11:30", window: "Late morning", tactic: "Woolly Bugger / leech", note: "Drift pools and current seams; shade-holding fish on the Shenandoah forks. North Fork at 15.1 CFS — very low, fish concentrated in deeper pools", hot: false },
-  { time: "11:30–14:00", window: "Midday grind", tactic: "Nymphs / helgramite", note: "Bounce bottom with care in ultra-low Potomac flows. Overcast days can turn the bite on in minutes — keep a streamer rod rigged", hot: false },
-  { time: "14:00–17:00", window: "Afternoon", tactic: "Watch sky; streamer if clouds build", note: "Afternoon cloud cover can flip the bite fast — chartreuse streamer, fast strips. Low water means longer, stealthier approaches", hot: false },
-  { time: "17:00–20:00", window: "Evening", tactic: "Topwater, sulphur dries", note: "Second-best topwater window; Trico/sulphur spinner falls on calmer pools. Extremely low flows make evening rises highly visible on glassy water", hot: true },
+  { time: "5:00–7:00", window: "Dawn", tactic: "Poppers & deer-hair bugs", note: "Work shallow banks and log jams before light; topwater action peaks in first 45 min", hot: true },
+  { time: "7:00–9:30", window: "Morning", tactic: "Crayfish & Clouser Minnow", note: "Shift to sub-surface; chartreuse/white Clouser for stained Potomac water", hot: true },
+  { time: "9:30–11:30", window: "Late morning", tactic: "Woolly Bugger / leech", note: "Drift pools and current seams; shade-holding fish on the Shenandoah forks", hot: false },
+  { time: "11:30–14:00", window: "Midday grind", tactic: "Nymphs / helgramite", note: "Bounce bottom with extra weight in stained water. Overcast days can turn the bite on in minutes — keep a streamer rod rigged", hot: false },
+  { time: "14:00–17:00", window: "Afternoon", tactic: "Watch sky; streamer if clouds build", note: "Afternoon cloud cover can flip the bite fast — chartreuse streamer, fast strips", hot: false },
+  { time: "17:00–20:00", window: "Evening", tactic: "Topwater, sulphur dries", note: "Second-best topwater window; Trico/sulphur spinner falls on calmer pools", hot: true },
 ];
 
 const HATCHES = [
@@ -368,23 +368,23 @@ const SPOTS = [
     name: "Shepherdstown Bypass Riffle",
     river: "Potomac",
     tags: [{ label: "Public Access", cls: "tag-public" }, { label: "Wading", cls: "tag-wade" }],
-    desc: "Classic riffle-pool sequence below the old low-water bridge. Rocky substrate holds smallmouth in slots behind boulders. MD DNR supplemental smallmouth stocking has been active here — expect mixed wild and holdover fish. Current gauge: Potomac at Shepherdstown 3.84 CFS — extremely low and clear. Fish are concentrated in the deepest available slots and pool tailouts; approach with extreme stealth.",
-    warn: "Extremely low flows (3.84 CFS at gauge) — fish are ultra-spooky. Drop to 4X–5X tippet, downsize flies, make long casts from distance. Focus on the deepest pool slots and shaded undercuts.",
+    desc: "Classic riffle-pool sequence below the old low-water bridge. Rocky substrate holds smallmouth in slots behind boulders. MD DNR supplemental smallmouth stocking has been active here — expect mixed wild and holdover fish. Current conditions: low and clear with light stain, upper 70s°F.",
+    warn: "Stained water this week — go chartreuse/white on Clousers, add weight to reach bottom.",
     snakehead: true,
   },
   {
     name: "Dargan Bend / Keep Tryst Rd",
     river: "Potomac",
     tags: [{ label: "Public Access", cls: "tag-public" }, { label: "Wading / Canoe", cls: "tag-wade" }],
-    desc: "A long, productive bend with excellent wade access off Keep Tryst Road. Deep run on the Maryland side holds trophy smallmouth. Active MD DNR restocking site. At current extreme low flows, wade carefully to the deepest channel seams — that is where fish have concentrated. Early morning poppers in the shallows before light reaches the water, then crayfish patterns crawled slowly along the bottom of the deep run.",
-    warn: "Potomac running at very low flows — long, stealthy approaches required. Upper 70s°F water temp; focus on dawn window and shaded current. Midday fish stack in the deepest, coolest slots.",
+    desc: "A long, productive bend with excellent wade access off Keep Tryst Road. Deep run on the Maryland side holds trophy smallmouth. Active MD DNR restocking site. Early morning poppers in the shallows, then crayfish patterns in the channel.",
+    warn: "Upper 70s°F water temp — focus on dawn window and shaded current. Midday fish stack in deeper, cooler slots.",
     snakehead: true,
   },
   {
     name: "North Fork Shenandoah — Woodstock",
     river: "North Fork Shenandoah",
     tags: [{ label: "Public Access", cls: "tag-public" }, { label: "Wading", cls: "tag-wade" }],
-    desc: "Running at 15.1 CFS — very low and clear with the classic summer pattern in full effect. Fish concentrate almost exclusively in deeper ledge pools and undercut shaded banks during daylight. Early morning shaded current breaks are most productive. Excellent caddis activity at dusk. Access via VDGIF public fishing areas near Woodstock. At these flows, wade the shallow riffles carefully to avoid disturbing holding fish in pools ahead.",
+    desc: "Running low and clear with the classic summer pattern in full effect. Fish concentrate in early morning shaded current breaks and deep ledge pools. Excellent caddis activity at dusk. Access via VDGIF public fishing areas near Woodstock.",
     warn: null,
     hab: true,
   },
@@ -392,7 +392,7 @@ const SPOTS = [
     name: "South Fork Shenandoah — Front Royal",
     river: "South Fork Shenandoah",
     tags: [{ label: "Public / State Land", cls: "tag-public" }, { label: "Float-Friendly", cls: "tag-access" }],
-    desc: "Low, clear, and fishable. Summer pattern: active fish 5–9am and 5–8pm, near-dormant midday. South Branch at Moorefield running 158 CFS provides useful reference — main stem South Fork likely at comparable low summer flows. Sulphur and caddis hatches reliable at dusk. Wade from gravel bars or float a canoe through the longer pools. Low water means fish are easily spooked — use longer leaders and lighter tippet than you think you need.",
+    desc: "Low, fishable, and fishable. Summer pattern: active fish 5–9am and 5–8pm, near-dormant midday. Sulphur and caddis hatches reliable at dusk. Wade from gravel bars or float a canoe through the longer pools.",
     warn: null,
     hab: true,
   },
@@ -421,9 +421,8 @@ export default function FlyGuide() {
       {/* CONDITIONS BANNER */}
       <div className="fg-conditions">
         <span className="fg-conditions-label">Current Conditions</span>
-        <div className="fg-cond-item"><div className="fg-cond-dot" /><span>Potomac at Shepherdstown: 3.84 CFS · Extremely Low & Clear</span></div>
-        <div className="fg-cond-item"><div className="fg-cond-dot" /><span>South Branch at Moorefield: 158 CFS · Low · Clear</span></div>
-        <div className="fg-cond-item"><div className="fg-cond-dot" /><span>North Fork South Branch at Cabins: 15.1 CFS · Very Low · Clear</span></div>
+        <div className="fg-cond-item"><div className="fg-cond-dot" /><span>Potomac: Low & clear, light stain · Upper 70s°F</span></div>
+        <div className="fg-cond-item"><div className="fg-cond-dot" /><span>Shenandoah Forks: Low · Clear · Summer pattern</span></div>
         <div className="fg-cond-item"><div className="fg-cond-dot warn" /><span>HAB monitoring active — Shenandoah system</span></div>
         <div className="fg-cond-item"><div className="fg-cond-dot warn" /><span>Snakehead established — upper Potomac</span></div>
       </div>
@@ -435,7 +434,7 @@ export default function FlyGuide() {
         <div className="fg-subtitle">West Virginia & Northern Virginia · Summer 2025</div>
         <div className="fg-stats">
           <div className="fg-stat"><span className="fg-stat-val">Upper 70s°F</span><span className="fg-stat-lbl">Water Temp</span></div>
-          <div className="fg-stat"><span className="fg-stat-val">3.84 CFS</span><span className="fg-stat-lbl">Potomac · Shepherdstown</span></div>
+          <div className="fg-stat"><span className="fg-stat-val">Low · Clear</span><span className="fg-stat-lbl">Potomac Level</span></div>
           <div className="fg-stat"><span className="fg-stat-val">Dawn / Dusk</span><span className="fg-stat-lbl">Prime Windows</span></div>
           <div className="fg-stat"><span className="fg-stat-val">4 Spots</span><span className="fg-stat-lbl">Access Points</span></div>
         </div>
@@ -486,4 +485,122 @@ export default function FlyGuide() {
               </div>
               <hr className="fg-divider" />
               <p style={{ fontSize: 12, color: STEEL, lineHeight: 1.6 }}>
-                <strong>Water temp note:</strong> Potomac is in
+                <strong>Water temp note:</strong> Potomac is in the upper 70s°F — smallmouth become stressed above 80°F. Prioritize the dawn window, release fish quickly in the net, and stop targeting them if temps spike further. The Shenandoah forks are running cooler; fish can be targeted through more of the day in shaded current.
+              </p>
+            </>
+          )}
+
+          {/* HATCHES */}
+          {tab === 1 && (
+            <>
+              <div className="fg-section-head">Late June Hatches</div>
+              <div className="fg-section-sub">Primary food sources and matching patterns</div>
+              <div className="fg-hatch-grid">
+                {HATCHES.map((h, i) => (
+                  <div className="fg-hatch-card" key={i}>
+                    <div className="fg-hatch-name">{h.name}</div>
+                    <div className="fg-hatch-latin">{h.latin}</div>
+                    <div className="fg-hatch-detail">{h.note}</div>
+                    <div style={{ marginTop: 8 }}>
+                      <span className="fg-hatch-window">{h.time}</span>
+                    </div>
+                    <div style={{ marginTop: 8, fontSize: 12, color: AMBER, fontWeight: 600 }}>{h.flies}</div>
+                  </div>
+                ))}
+              </div>
+            </>
+          )}
+
+          {/* LEADERS */}
+          {tab === 2 && (
+            <>
+              <div className="fg-section-head">Leader & Tippet Guide</div>
+              <div className="fg-section-sub">Match to conditions — current Potomac is stained, size up</div>
+              <div style={{ overflowX: "auto" }}>
+                <table className="fg-leader">
+                  <thead>
+                    <tr>
+                      <th>Condition</th>
+                      <th>Leader</th>
+                      <th>Tippet</th>
+                      <th>Flies</th>
+                      <th>Notes</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {LEADERS.map((r, i) => (
+                      <tr key={i}>
+                        <td>{r.condition}</td>
+                        <td><span className="fg-code">{r.length}</span></td>
+                        <td><span className="fg-code">{r.tippet}</span></td>
+                        <td style={{ fontSize: 12 }}>{r.flies}</td>
+                        <td style={{ fontSize: 12, color: STEEL }}>{r.note}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </>
+          )}
+
+          {/* SPOTS */}
+          {tab === 3 && (
+            <>
+              <div className="fg-section-head">Access Points</div>
+              <div className="fg-section-sub">Current conditions noted — all sites public access</div>
+              {SPOTS.map((s, i) => (
+                <div className="fg-spot-card" key={i}>
+                  <div className="fg-spot-header">
+                    <div>
+                      <div className="fg-spot-name">{s.name}</div>
+                      <div className="fg-spot-meta">{s.river}</div>
+                    </div>
+                    <div style={{ display: "flex", flexDirection: "column", gap: 4, alignItems: "flex-end" }}>
+                      {s.tags.map((t, j) => <span key={j} className={`fg-spot-tag ${t.cls}`}>{t.label}</span>)}
+                    </div>
+                  </div>
+                  <div className="fg-spot-body">
+                    <p>{s.desc}</p>
+                    {s.warn && <div className="fg-spot-warn">⚠ {s.warn}</div>}
+                    {s.hab && (
+                      <div className="fg-spot-danger">
+                        🚨 <strong>HAB Advisory:</strong> Harmful algal toxins have been detected in the Shenandoah system. Check <a href="https://www.swimhealthyva.com" target="_blank" rel="noreferrer">SwimHealthyVA.com</a> before wading. Rinse all gear after use.
+                      </div>
+                    )}
+                    {s.snakehead && (
+                      <div className="fg-spot-danger" style={{ marginTop: s.warn ? 6 : 8 }}>
+                        🐟 <strong>Northern Snakehead:</strong> Invasive species now established in upper Potomac. Do not release if caught — report to MD DNR or VA DWR.
+                      </div>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </>
+          )}
+
+          {/* REMINDERS */}
+          {tab === 4 && (
+            <>
+              <div className="fg-section-head">Late June Reminders</div>
+              <div className="fg-section-sub">Safety, regulations, and gear checklist</div>
+              <div className="fg-remind-grid">
+                {REMINDERS.map((r, i) => (
+                  <div className={`fg-remind-card${r.danger ? " danger" : ""}`} key={i}>
+                    <div className="fg-remind-icon">{r.icon}</div>
+                    <div className="fg-remind-title">{r.title}</div>
+                    <div className="fg-remind-body">{r.body}</div>
+                  </div>
+                ))}
+              </div>
+            </>
+          )}
+
+        </div>
+      </div>
+
+      <div className="fg-footer">
+        Mountaineer Maker · Ranson, WV · Built for the upper Potomac & Shenandoah Valley
+      </div>
+    </div>
+  );
+}
