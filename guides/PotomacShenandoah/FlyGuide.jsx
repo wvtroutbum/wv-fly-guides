@@ -55,6 +55,15 @@ const styles = `
     flex-shrink: 0;
   }
   .fg-cond-dot.warn { background: ${RED}; }
+  .fg-cond-updated {
+    margin-left: auto;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 10px;
+    color: ${MIST};
+    opacity: 0.7;
+    white-space: nowrap;
+    letter-spacing: 0.06em;
+  }
 
   /* HERO */
   .fg-hero {
@@ -264,7 +273,7 @@ const styles = `
     padding: 14px 16px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+align-items: flex-start;
     gap: 12px;
   }
   .fg-spot-name { font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; }
@@ -338,8 +347,8 @@ const styles = `
 `;
 
 const SCHEDULE = [
-  { time: "5:00–7:00", window: "Dawn", tactic: "Poppers & deer-hair bugs", note: "Work shallow banks and log jams before light; topwater action peaks in first 45 min", hot: true },
-  { time: "7:00–9:30", window: "Morning", tactic: "Crayfish & Clouser Minnow", note: "Shift to sub-surface; chartreuse/white Clouser for stained Potomac water", hot: true },
+  { time: "5:00–7:00", window: "Dawn", tactic: "Poppers & deer-hair bugs", note: "Work shallow banks and log jams before light; topwater action peaks in first 45 min. South Branch running 158 CFS — good push of water for early morning wade", hot: true },
+  { time: "7:00–9:30", window: "Morning", tactic: "Crayfish & Clouser Minnow", note: "Shift to sub-surface; chartreuse/white Clouser for stained Potomac water. Potomac at Shepherdstown reading very low (3.84 CFS) — focus on deeper slots and pools", hot: true },
   { time: "9:30–11:30", window: "Late morning", tactic: "Woolly Bugger / leech", note: "Drift pools and current seams; shade-holding fish on the Shenandoah forks", hot: false },
   { time: "11:30–14:00", window: "Midday grind", tactic: "Nymphs / helgramite", note: "Bounce bottom with extra weight in stained water. Overcast days can turn the bite on in minutes — keep a streamer rod rigged", hot: false },
   { time: "14:00–17:00", window: "Afternoon", tactic: "Watch sky; streamer if clouds build", note: "Afternoon cloud cover can flip the bite fast — chartreuse streamer, fast strips", hot: false },
@@ -368,16 +377,16 @@ const SPOTS = [
     name: "Shepherdstown Bypass Riffle",
     river: "Potomac",
     tags: [{ label: "Public Access", cls: "tag-public" }, { label: "Wading", cls: "tag-wade" }],
-    desc: "Classic riffle-pool sequence below the old low-water bridge. Rocky substrate holds smallmouth in slots behind boulders. MD DNR supplemental smallmouth stocking has been active here — expect mixed wild and holdover fish. Current conditions: low and clear with light stain, upper 70s°F.",
-    warn: "Stained water this week — go chartreuse/white on Clousers, add weight to reach bottom.",
+    desc: "Classic riffle-pool sequence below the old low-water bridge. Rocky substrate holds smallmouth in slots behind boulders. MD DNR supplemental smallmouth stocking has been active here — expect mixed wild and holdover fish. Current conditions: Potomac at Shepherdstown gauge reading very low at 3.84 CFS — fish are concentrated in deeper pools and channel slots; wade carefully on exposed ledges.",
+    warn: "Extremely low flow (3.84 CFS at Shepherdstown gauge) — fish stack in deeper pools and current seams. Go chartreuse/white on Clousers, add weight to reach bottom. Avoid disturbing holding water.",
     snakehead: true,
   },
   {
     name: "Dargan Bend / Keep Tryst Rd",
     river: "Potomac",
     tags: [{ label: "Public Access", cls: "tag-public" }, { label: "Wading / Canoe", cls: "tag-wade" }],
-    desc: "A long, productive bend with excellent wade access off Keep Tryst Road. Deep run on the Maryland side holds trophy smallmouth. Active MD DNR restocking site. Early morning poppers in the shallows, then crayfish patterns in the channel.",
-    warn: "Upper 70s°F water temp — focus on dawn window and shaded current. Midday fish stack in deeper, cooler slots.",
+    desc: "A long, productive bend with excellent wade access off Keep Tryst Road. Deep run on the Maryland side holds trophy smallmouth. Active MD DNR restocking site. Early morning poppers in the shallows, then crayfish patterns in the channel. With the Potomac running very low, target the deeper channel run on the MD side — fish have concentrated in the coolest, deepest available water.",
+    warn: "Upper 70s°F water temp and very low flows — focus on dawn window and shaded current. Midday fish stack in deeper, cooler slots. Low water exposes normally submerged structure — wade cautiously.",
     snakehead: true,
   },
   {
@@ -421,20 +430,22 @@ export default function FlyGuide() {
       {/* CONDITIONS BANNER */}
       <div className="fg-conditions">
         <span className="fg-conditions-label">Current Conditions</span>
-        <div className="fg-cond-item"><div className="fg-cond-dot" /><span>Potomac: Low & clear, light stain · Upper 70s°F</span></div>
+        <div className="fg-cond-item"><div className="fg-cond-dot" /><span>Potomac at Shepherdstown: 3.84 CFS · Temp N/A</span></div>
+        <div className="fg-cond-item"><div className="fg-cond-dot" /><span>South Branch at Moorefield: 158 CFS · Temp N/A</span></div>
         <div className="fg-cond-item"><div className="fg-cond-dot" /><span>Shenandoah Forks: Low · Clear · Summer pattern</span></div>
         <div className="fg-cond-item"><div className="fg-cond-dot warn" /><span>HAB monitoring active — Shenandoah system</span></div>
         <div className="fg-cond-item"><div className="fg-cond-dot warn" /><span>Snakehead established — upper Potomac</span></div>
+        <span className="fg-cond-updated">Last updated: Saturday, June 27 2026</span>
       </div>
 
       {/* HERO */}
       <div className="fg-hero">
         <div className="fg-eyebrow">Upper Potomac & Shenandoah Valley · Late June Field Guide</div>
         <h1>Smallmouth<br /><em>on the Fly</em></h1>
-        <div className="fg-subtitle">West Virginia & Northern Virginia · Summer 2025</div>
+        <div className="fg-subtitle">West Virginia & Northern Virginia · Summer 2026</div>
         <div className="fg-stats">
           <div className="fg-stat"><span className="fg-stat-val">Upper 70s°F</span><span className="fg-stat-lbl">Water Temp</span></div>
-          <div className="fg-stat"><span className="fg-stat-val">Low · Clear</span><span className="fg-stat-lbl">Potomac Level</span></div>
+          <div className="fg-stat"><span className="fg-stat-val">3.84 CFS</span><span className="fg-stat-lbl">Potomac @ Shepherdstown</span></div>
           <div className="fg-stat"><span className="fg-stat-val">Dawn / Dusk</span><span className="fg-stat-lbl">Prime Windows</span></div>
           <div className="fg-stat"><span className="fg-stat-val">4 Spots</span><span className="fg-stat-lbl">Access Points</span></div>
         </div>
@@ -485,7 +496,7 @@ export default function FlyGuide() {
               </div>
               <hr className="fg-divider" />
               <p style={{ fontSize: 12, color: STEEL, lineHeight: 1.6 }}>
-                <strong>Water temp note:</strong> Potomac is in the upper 70s°F — smallmouth become stressed above 80°F. Prioritize the dawn window, release fish quickly in the net, and stop targeting them if temps spike further. The Shenandoah forks are running cooler; fish can be targeted through more of the day in shaded current.
+                <strong>Water temp note:</strong> Potomac is in the upper 70s°F — smallmouth become stressed above 80°F. Prioritize the dawn window, release fish quickly in the net, and stop targeting them if temps spike further. The Potomac at Shepherdstown is running very low at 3.84 CFS — fish are concentrated in deeper pools and channel slots; approach these holds carefully. The Shenandoah forks are running cooler; fish can be targeted through more of the day in shaded current.
               </p>
             </>
           )}
