@@ -347,12 +347,12 @@ align-items: flex-start;
 `;
 
 const SCHEDULE = [
-  { time: "5:00–7:00", window: "Dawn", tactic: "Poppers & deer-hair bugs", note: "Work shallow banks and log jams before light; topwater action peaks in first 45 min. South Branch running 924 CFS — elevated flow; focus on slower inside bends, eddies, and protected bank water rather than open riffles", hot: true },
-  { time: "7:00–9:30", window: "Morning", tactic: "Crayfish & Clouser Minnow", note: "Shift to sub-surface; Potomac at Shepherdstown gauge currently unavailable — focus on deeper slots and pools as a precaution, chartreuse/white Clouser for any stained water at elevated flows", hot: true },
-  { time: "9:30–11:30", window: "Late morning", tactic: "Woolly Bugger / leech", note: "Drift pools and current seams; shade-holding fish on the Shenandoah forks. North Fork South Branch at 32.6 CFS — low and clear; approach cautiously, use long fine tippet and small naturals", hot: false },
-  { time: "11:30–14:00", window: "Midday grind", tactic: "Nymphs / helgramite", note: "Bounce bottom with extra weight in elevated flows on the South Branch. Overcast days can turn the bite on in minutes — keep a streamer rod rigged", hot: false },
-  { time: "14:00–17:00", window: "Afternoon", tactic: "Watch sky; streamer if clouds build", note: "Afternoon cloud cover can flip the bite fast — chartreuse streamer, fast strips. High flows on South Branch push fish tight to structure and cut banks", hot: false },
-  { time: "17:00–20:00", window: "Evening", tactic: "Topwater, sulphur dries", note: "Second-best topwater window; Trico/sulphur spinner falls on calmer pools. On South Branch elevated flows, work slackwater margins and tailouts carefully; low clear conditions on North Fork call for delicate presentations", hot: true },
+  { time: "5:00–7:00", window: "Dawn", tactic: "Poppers & deer-hair bugs", note: "Work shallow banks and log jams before light; topwater action peaks in first 45 min. South Branch running 172 CFS — near-normal fall flow; fish inside bends, eddies, and along rocky bank structure for active morning feeders", hot: true },
+  { time: "7:00–9:30", window: "Morning", tactic: "Crayfish & Clouser Minnow", note: "Shift to sub-surface; Potomac at Shepherdstown gauge currently unavailable — focus on deeper slots and pools as a precaution, chartreuse/white Clouser for any stained water; at 172 CFS South Branch is fishable through most wadeable runs", hot: true },
+  { time: "9:30–11:30", window: "Late morning", tactic: "Woolly Bugger / leech", note: "Drift pools and current seams; shade-holding fish on the Shenandoah forks. North Fork South Branch at 19.8 CFS — low and clear; approach cautiously, use long fine tippet and small naturals", hot: false },
+  { time: "11:30–14:00", window: "Midday grind", tactic: "Nymphs / helgramite", note: "Bounce bottom through rocky runs on the South Branch at fishable 172 CFS. Overcast days can turn the bite on in minutes — keep a streamer rod rigged", hot: false },
+  { time: "14:00–17:00", window: "Afternoon", tactic: "Watch sky; streamer if clouds build", note: "Afternoon cloud cover can flip the bite fast — chartreuse streamer, fast strips. South Branch at 172 CFS allows access to mid-channel structure; work boulders and current seams", hot: false },
+  { time: "17:00–20:00", window: "Evening", tactic: "Topwater, sulphur dries", note: "Second-best topwater window; Trico/sulphur spinner falls on calmer pools. South Branch at 172 CFS — work slackwater margins and tailouts; low clear conditions on North Fork at 19.8 CFS call for delicate presentations and stealthy approaches", hot: true },
 ];
 
 const HATCHES = [
@@ -393,7 +393,7 @@ const SPOTS = [
     name: "North Fork Shenandoah — Woodstock",
     river: "North Fork Shenandoah",
     tags: [{ label: "Public Access", cls: "tag-public" }, { label: "Wading", cls: "tag-wade" }],
-    desc: "North Fork South Branch at Cabins running 32.6 CFS — a low, clear condition requiring stealthy approaches and fine tippet. Fish concentrate in early morning shaded current breaks and deep ledge pools. Excellent caddis activity at dusk. Access via VDGIF public fishing areas near Woodstock. At this flow, target the deepest slots, undercut banks, and any remaining holding lies; avoid wading through prime lies.",
+    desc: "North Fork South Branch at Cabins running 19.8 CFS — a low, clear condition requiring stealthy approaches and fine tippet. Fish concentrate in early morning shaded current breaks and deep ledge pools. Excellent caddis activity at dusk. Access via VDGIF public fishing areas near Woodstock. At this flow, target the deepest slots, undercut banks, and any remaining holding lies; avoid wading through prime lies.",
     warn: null,
     hab: true,
   },
@@ -431,11 +431,11 @@ export default function FlyGuide() {
       <div className="fg-conditions">
         <span className="fg-conditions-label">Current Conditions</span>
         <div className="fg-cond-item"><div className="fg-cond-dot" /><span>Potomac at Shepherdstown: unavailable CFS · Temp N/A</span></div>
-        <div className="fg-cond-item"><div className="fg-cond-dot" /><span>South Branch at Moorefield: 924 CFS · Temp N/A</span></div>
-        <div className="fg-cond-item"><div className="fg-cond-dot" /><span>N Fork South Branch at Cabins: 32.6 CFS · Temp N/A</span></div>
+        <div className="fg-cond-item"><div className="fg-cond-dot" /><span>South Branch at Moorefield: 172 CFS · Temp N/A</span></div>
+        <div className="fg-cond-item"><div className="fg-cond-dot" /><span>N Fork South Branch at Cabins: 19.8 CFS · Temp N/A</span></div>
         <div className="fg-cond-item"><div className="fg-cond-dot warn" /><span>HAB monitoring active — Shenandoah system</span></div>
         <div className="fg-cond-item"><div className="fg-cond-dot warn" /><span>Snakehead established — upper Potomac</span></div>
-        <span className="fg-cond-updated">Last updated: Friday, October 23 2026</span>
+        <span className="fg-cond-updated">Last updated: Friday, October 30 2026</span>
       </div>
 
       {/* HERO */}
@@ -445,7 +445,7 @@ export default function FlyGuide() {
         <div className="fg-subtitle">West Virginia & Northern Virginia · Summer 2026</div>
         <div className="fg-stats">
           <div className="fg-stat"><span className="fg-stat-val">Temp N/A</span><span className="fg-stat-lbl">Water Temp</span></div>
-          <div className="fg-stat"><span className="fg-stat-val">924 CFS</span><span className="fg-stat-lbl">S Branch @ Moorefield</span></div>
+          <div className="fg-stat"><span className="fg-stat-val">172 CFS</span><span className="fg-stat-lbl">S Branch @ Moorefield</span></div>
           <div className="fg-stat"><span className="fg-stat-val">Dawn / Dusk</span><span className="fg-stat-lbl">Prime Windows</span></div>
           <div className="fg-stat"><span className="fg-stat-val">4 Spots</span><span className="fg-stat-lbl">Access Points</span></div>
         </div>
@@ -496,7 +496,7 @@ export default function FlyGuide() {
               </div>
               <hr className="fg-divider" />
               <p style={{ fontSize: 12, color: STEEL, lineHeight: 1.6 }}>
-                <strong>Water temp note:</strong> Potomac gauge temp is currently unavailable — exercise caution and monitor conditions on arrival. Smallmouth become stressed above 80°F; prioritize the dawn window, release fish quickly in the net, and stop targeting them if temps spike. South Branch at Moorefield is running 924 CFS — an elevated flow; focus on protected inside bends, eddies, and bank structure rather than open riffles. The Potomac at Shepherdstown gauge is unavailable; scout flows before committing to a wade. North Fork South Branch at Cabins is running 32.6 CFS — a low, clear condition; use stealthy approaches, long leaders, and fine tippet. The Shenandoah forks can be targeted through more of the day in shaded current.
+                <strong>Water temp note:</strong> Potomac gauge temp is currently unavailable — exercise caution and monitor conditions on arrival. Smallmouth become stressed above 80°F; prioritize the dawn window, release fish quickly in the net, and stop targeting them if temps spike. South Branch at Moorefield is running 172 CFS — a near-normal fall flow; most wadeable runs and mid-channel structure are accessible, focus on boulder slots, current seams, and inside bends. The Potomac at Shepherdstown gauge is unavailable; scout flows before committing to a wade. North Fork South Branch at Cabins is running 19.8 CFS — a low, clear condition; use stealthy approaches, long leaders, and fine tippet. The Shenandoah forks can be targeted through more of the day in shaded current.
               </p>
             </>
           )}
@@ -526,7 +526,7 @@ export default function FlyGuide() {
           {tab === 2 && (
             <>
               <div className="fg-section-head">Leader & Tippet Guide</div>
-              <div className="fg-section-sub">Match to conditions — check Potomac gauge on arrival; South Branch running 924 CFS; N Fork South Branch at 32.6 CFS</div>
+              <div className="fg-section-sub">Match to conditions — check Potomac gauge on arrival; South Branch running 172 CFS; N Fork South Branch at 19.8 CFS</div>
               <div style={{ overflowX: "auto" }}>
                 <table className="fg-leader">
                   <thead>
