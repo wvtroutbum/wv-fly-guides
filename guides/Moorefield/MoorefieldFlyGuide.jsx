@@ -137,26 +137,26 @@ hr.mg-div{border:none;border-top:1px solid rgba(0,0,0,.1);margin:22px 0;}
 `;
 
 const TROUT_SCHEDULE = [
-  { time:"5:30–8:30",  window:"Dawn / Cool",   tactic:"Elk Hair Caddis, Sulphur dry",    note:"Best surface action while temps are down; fish stack in riffles above pools on the North Fork — flows at 188 CFS on the main stem are low-moderate for early November, a good wading level; fish are in their normal lies in riffles, seams, and pool heads; water temp unavailable from gauge, probe before fishing", hot:true },
-  { time:"8:30–11:00", window:"Late morning",   tactic:"Nymph — BWO, Pheasant Tail",     note:"Sub-surface as sun hits; drift seams below limestone ledges and undercuts — North Fork at 18.2 CFS is a low and fishable flow; main stem at 188 CFS is running at a comfortable wading level; good conditions to focus trout effort on both the North Fork near Cabins and the main stem with careful wading; water clarity should be good at these flows", hot:false },
-  { time:"11:00–16:00",window:"Midday — rest",  tactic:"Move to shade or switch to bass", note:"Water temps unavailable from gauge — probe with a thermometer before continuing to target trout. Main stem running 188 CFS, a low-moderate early-November flow with good wading conditions; North Fork at 18.2 CFS is on the low side — fish may be concentrated in the deeper pool structure at midday; check water temp before continuing trout fishing through the midday window", hot:false, warn:true },
-  { time:"16:00–18:00",window:"Afternoon cool", tactic:"Caddis nymph, soft hackle",      note:"Canyon shade drops temps; fish emerge from deeper slots — 188 CFS on the main stem is a comfortable afternoon wading flow with fish in predictable lies along seams and behind boulders; North Fork at 18.2 CFS is low — approach evening fish carefully and use fine tippet; swing soft hackles through riffle tails on the North Fork", hot:false },
-  { time:"18:00–dusk", window:"Evening hatch",  tactic:"Sulphur, Light Cahill, Caddis",  note:"Most reliable dry-fly window; spinner falls on flat tailouts below riffles — both the North Fork at 18.2 CFS and the main stem at 188 CFS are at fishable levels for the evening session; approach cautiously from downstream for evening rising fish; low clear water means fish are leader-shy — drop to 6X tippet for surface-sipping trout", hot:true },
+  { time:"5:30–8:30",  window:"Dawn / Cool",   tactic:"Elk Hair Caddis, Sulphur dry",    note:"Best surface action while temps are down; fish stack in riffles above pools on the North Fork — flows at 158 CFS on the main stem are low for mid-November, a good wading level; fish are in their normal lies in riffles, seams, and pool heads; water temp unavailable from gauge, probe before fishing", hot:true },
+  { time:"8:30–11:00", window:"Late morning",   tactic:"Nymph — BWO, Pheasant Tail",     note:"Sub-surface as sun hits; drift seams below limestone ledges and undercuts — North Fork at 15.1 CFS is a low and fishable flow; main stem at 158 CFS is running at a comfortable wading level; good conditions to focus trout effort on both the North Fork near Cabins and the main stem with careful wading; water clarity should be good at these flows", hot:false },
+  { time:"11:00–16:00",window:"Midday — rest",  tactic:"Move to shade or switch to bass", note:"Water temps unavailable from gauge — probe with a thermometer before continuing to target trout. Main stem running 158 CFS, a low mid-November flow with good wading conditions; North Fork at 15.1 CFS is on the low side — fish may be concentrated in the deeper pool structure at midday; check water temp before continuing trout fishing through the midday window", hot:false, warn:true },
+  { time:"16:00–18:00",window:"Afternoon cool", tactic:"Caddis nymph, soft hackle",      note:"Canyon shade drops temps; fish emerge from deeper slots — 158 CFS on the main stem is a comfortable afternoon wading flow with fish in predictable lies along seams and behind boulders; North Fork at 15.1 CFS is low — approach evening fish carefully and use fine tippet; swing soft hackles through riffle tails on the North Fork", hot:false },
+  { time:"18:00–dusk", window:"Evening hatch",  tactic:"Sulphur, Light Cahill, Caddis",  note:"Most reliable dry-fly window; spinner falls on flat tailouts below riffles — both the North Fork at 15.1 CFS and the main stem at 158 CFS are at fishable levels for the evening session; approach cautiously from downstream for evening rising fish; low clear water means fish are leader-shy — drop to 6X tippet for surface-sipping trout", hot:true },
 ];
 
 const BASS_SCHEDULE = [
-  { time:"5:30–8:00",  window:"Dawn topwater",  tactic:"Deer-hair bug, Gurgler",          note:"Prime popper window at McNeill Tract gravel bars and Moorefield flats — 188 CFS on the main stem is a low-moderate early-November flow; gravel bars are exposed and wading conditions are very good; fish are in classic early-morning positions along gravel bar edges and in riffle tailouts; work the seams and eddy lines at the Trough entrance carefully", hot:true },
-  { time:"8:00–10:00", window:"Morning",         tactic:"Crayfish, Clouser Minnow",       note:"Shift sub-surface; drift rocky Trough chutes and ledge edges with weighted crayfish — 188 CFS is a low-moderate flow with excellent water clarity; fish have settled into their normal holding lies along rocky ledges and in the deeper pool pockets; target the seams and tailouts where bass stack in classic low-water positions", hot:true },
-  { time:"10:00–14:00",window:"Mid-morning",     tactic:"Woolly Bugger, helgramite",      note:"Fast strips through deeper Trough pools; shade-holding fish on limestone ledge breaks — at 188 CFS the canyon pools are clear and fish may be more finesse-oriented; target the shaded deeper slots and ledge pockets; longer leaders and lighter presentations will outperform at this low, clear flow", hot:false },
-  { time:"14:00–17:00",window:"Midday",          tactic:"Deep nymph, helgramite",         note:"Bounce bottom in coldest canyon slots; overcast = streamer opportunity any time of day — 188 CFS conditions put fish in predictable low-water lies; presentations drifted naturally along the bottom in the deeper canyon pool slots will be most productive; clear water requires accurate casts and natural drifts", hot:false },
-  { time:"17:00–dark", window:"Evening",         tactic:"Topwater / big streamer",        note:"Second topwater window; evening bite on the Moorefield flats can be electric — at 188 CFS the gravel bars and flats are fully exposed with excellent wading access; work the riffle tailouts, gravel bar edges, and pool heads as fish move up to feed in the evening; conditions are ideal for wading anglers at this flow", hot:true },
+  { time:"5:30–8:00",  window:"Dawn topwater",  tactic:"Deer-hair bug, Gurgler",          note:"Prime popper window at McNeill Tract gravel bars and Moorefield flats — 158 CFS on the main stem is a low mid-November flow; gravel bars are exposed and wading conditions are very good; fish are in classic early-morning positions along gravel bar edges and in riffle tailouts; work the seams and eddy lines at the Trough entrance carefully", hot:true },
+  { time:"8:00–10:00", window:"Morning",         tactic:"Crayfish, Clouser Minnow",       note:"Shift sub-surface; drift rocky Trough chutes and ledge edges with weighted crayfish — 158 CFS is a low flow with excellent water clarity; fish have settled into their normal holding lies along rocky ledges and in the deeper pool pockets; target the seams and tailouts where bass stack in classic low-water positions", hot:true },
+  { time:"10:00–14:00",window:"Mid-morning",     tactic:"Woolly Bugger, helgramite",      note:"Fast strips through deeper Trough pools; shade-holding fish on limestone ledge breaks — at 158 CFS the canyon pools are clear and fish may be more finesse-oriented; target the shaded deeper slots and ledge pockets; longer leaders and lighter presentations will outperform at this low, clear flow", hot:false },
+  { time:"14:00–17:00",window:"Midday",          tactic:"Deep nymph, helgramite",         note:"Bounce bottom in coldest canyon slots; overcast = streamer opportunity any time of day — 158 CFS conditions put fish in predictable low-water lies; presentations drifted naturally along the bottom in the deeper canyon pool slots will be most productive; clear water requires accurate casts and natural drifts", hot:false },
+  { time:"17:00–dark", window:"Evening",         tactic:"Topwater / big streamer",        note:"Second topwater window; evening bite on the Moorefield flats can be electric — at 158 CFS the gravel bars and flats are fully exposed with excellent wading access; work the riffle tailouts, gravel bar edges, and pool heads as fish move up to feed in the evening; conditions are ideal for wading anglers at this flow", hot:true },
 ];
 
 const TROUT_HATCHES = [
-  { name:"Sulphur",      latin:"Ephemerella invaria",     time:"Evening",    flies:"#16–18 Parachute Sulphur, Comparadun",          note:"Most consistent early-November evening hatch on the North Fork tailouts" },
+  { name:"Sulphur",      latin:"Ephemerella invaria",     time:"Evening",    flies:"#16–18 Parachute Sulphur, Comparadun",          note:"Most consistent mid-November evening hatch on the North Fork tailouts" },
   { name:"Light Cahill", latin:"Stenacron interpunctatum",time:"Evening",    flies:"#14–16 Light Cahill, CDC Cahill",                note:"Fishes well alongside sulphurs; look for mixed spinner falls on flat water" },
   { name:"Caddis",       latin:"Hydropsychidae",           time:"Dusk",       flies:"#14–16 Elk Hair Caddis, X-Caddis, Soft Hackle", note:"Swing soft hackle wet through fast North Fork riffles at dusk" },
-  { name:"BWO",          latin:"Baetis spp.",              time:"Overcast/AM",flies:"#18–22 Parachute Adams, CDC BWO",               note:"Overcast days can trigger BWO hatches in early November — stay alert" },
+  { name:"BWO",          latin:"Baetis spp.",              time:"Overcast/AM",flies:"#18–22 Parachute Adams, CDC BWO",               note:"Overcast days can trigger BWO hatches in mid-November — stay alert" },
   { name:"Trico",        latin:"Tricorythodes spp.",       time:"Dawn 6–9am", flies:"#22–26 Trico Spinner, CDC cluster",             note:"Spinner falls on slick tailouts of the upper North Fork near Cabins" },
   { name:"Sculpin",      latin:"Cottus spp.",              time:"All day",    flies:"#4–8 Muddler Minnow, Clouser",                  note:"Dominant forage for big holdover browns; dead-drift then strip through pools" },
 ];
@@ -191,8 +191,8 @@ const TROUT_SPOTS = [
     river:"North Fork of the South Branch",
     type:"trout",
     tags:[{label:"Stocked + Holdovers",cls:"stocked"},{label:"Wading",cls:"wade"}],
-    desc:"WV DNR stocks this stretch heavily January through June. The boulder-field habitat upstream of the Smoke Hole Rd bridge holds impressive numbers of fish and some wild holdovers. Access off Rt 28/55 at numerous pull-offs south of Cabins — road runs alongside the river for miles. North Fork is currently running 18.2 CFS — a low and fishable early-November flow. Water temp unavailable from gauge; carry a thermometer.",
-    note:"Fish the shaded canyon walls in the morning; spinner falls on the broad tailout below the bridge at dusk are outstanding. North Fork at 18.2 CFS is a low, clear flow — fish are concentrated in the deeper pool structure and undercut banks; approach quietly and use fine tippet. Standard 5X tippet on riffles, drop to 6X for flat-water rising fish. The main stem at 188 CFS is also a fishable wading flow today, giving you good options across the watershed.",
+    desc:"WV DNR stocks this stretch heavily January through June. The boulder-field habitat upstream of the Smoke Hole Rd bridge holds impressive numbers of fish and some wild holdovers. Access off Rt 28/55 at numerous pull-offs south of Cabins — road runs alongside the river for miles. North Fork is currently running 15.1 CFS — a low and fishable mid-November flow. Water temp unavailable from gauge; carry a thermometer.",
+    note:"Fish the shaded canyon walls in the morning; spinner falls on the broad tailout below the bridge at dusk are outstanding. North Fork at 15.1 CFS is a low, clear flow — fish are concentrated in the deeper pool structure and undercut banks; approach quietly and use fine tippet. Standard 5X tippet on riffles, drop to 6X for flat-water rising fish. The main stem at 158 CFS is also a fishable wading flow today, giving you good options across the watershed.",
     warn:null,
     eagle:false,
   },
@@ -201,8 +201,8 @@ const TROUT_SPOTS = [
     river:"South Branch Potomac",
     type:"trout",
     tags:[{label:"USFS Public",cls:"stocked"},{label:"Float or Wade",cls:"float"}],
-    desc:"Upper end of the Smoke Hole Canyon float. Walk-in access from the USFS Big Bend Campground. Clear limestone water with excellent cobblestone structure. Petersburg Hatchery golden rainbow trout occasionally appear this far down. Best combined trout-and-smallmouth water in the system. Main stem currently running 188 CFS — a low-moderate early-November flow with good wading conditions and excellent water clarity.",
-    note:"14-mile float to Petersburg — commit to a full day. At 188 CFS the float pace is leisurely; excellent wading conditions throughout the canyon with fish in classic low-water lies along seams, in pool tails, and behind boulder structure. Water temperature unavailable from gauge — bring a thermometer and check before targeting trout through the midday window.",
+    desc:"Upper end of the Smoke Hole Canyon float. Walk-in access from the USFS Big Bend Campground. Clear limestone water with excellent cobblestone structure. Petersburg Hatchery golden rainbow trout occasionally appear this far down. Best combined trout-and-smallmouth water in the system. Main stem currently running 158 CFS — a low mid-November flow with good wading conditions and excellent water clarity.",
+    note:"14-mile float to Petersburg — commit to a full day. At 158 CFS the float pace is leisurely; excellent wading conditions throughout the canyon with fish in classic low-water lies along seams, in pool tails, and behind boulder structure. Water temperature unavailable from gauge — bring a thermometer and check before targeting trout through the midday window.",
     warn:null,
     eagle:false,
   },
@@ -211,8 +211,8 @@ const TROUT_SPOTS = [
     river:"South Branch Potomac",
     type:"trout",
     tags:[{label:"Stocked",cls:"stocked"},{label:"Walk-In Wade",cls:"wade"}],
-    desc:"The Petersburg State Fish Hatchery releases golden rainbow trout — WV's signature strain developed here — into the South Branch below Petersburg. Access at the Rt 220 bridge pull-off north side. Stocking runs January–June; holdovers linger in the deeper pools through summer and into fall. Main stem running 188 CFS — a low-moderate early-November flow with comfortable wading conditions at the bridge access today; fish are in their normal holds in the deep pool slots and along seam water.",
-    note:"Water temps unavailable from the gauge — use a stream thermometer before targeting trout here in early November. Target the dawn and dusk windows only. Deep slots below the bridge hold the largest fish. At 188 CFS wading conditions are comfortable — approach rising fish carefully in this low, clear water and use fine tippet.",
+    desc:"The Petersburg State Fish Hatchery releases golden rainbow trout — WV's signature strain developed here — into the South Branch below Petersburg. Access at the Rt 220 bridge pull-off north side. Stocking runs January–June; holdovers linger in the deeper pools through summer and into fall. Main stem running 158 CFS — a low mid-November flow with comfortable wading conditions at the bridge access today; fish are in their normal holds in the deep pool slots and along seam water.",
+    note:"Water temps unavailable from the gauge — use a stream thermometer before targeting trout here in mid-November. Target the dawn and dusk windows only. Deep slots below the bridge hold the largest fish. At 158 CFS wading conditions are comfortable — approach rising fish carefully in this low, clear water and use fine tippet.",
     warn:"Water temp unavailable from gauge — check before targeting trout. Stop targeting trout if above 68°F. Fish are stressed and release mortality climbs fast above 70°F.",
     eagle:false,
   },
@@ -224,8 +224,8 @@ const BASS_SPOTS = [
     river:"South Branch Potomac",
     type:"bass",
     tags:[{label:"WMA / Public",cls:"wma"},{label:"Trough Put-In",cls:"float"},{label:"Cabin Access",cls:"cabin"}],
-    desc:"Your closest quality water from the cabin. From Ashton Woods Dr, take Trough Rd north about 4 miles to the entrance on the left — this is the 430-acre McNeill Tract of the South Branch Wildlife Management Area. Pasture land and forest along the river with carry-down access to the South Branch at the upper mouth of The Trough. This is the standard put-in for the 7-mile Trough float. South Branch running 188 CFS — a low-moderate early-November flow; gravel bars are exposed and wading conditions are good; fish are in classic low-water lies along gravel bar edges, in pool tails, and behind boulder structure at the canyon mouth.",
-    note:"The WMA boundary marks the start of The Trough canyon. At 188 CFS wading off the McNeill Tract is comfortable — access the river from the gravel bars and work the seams and pool structure at the canyon mouth carefully. Low, clear water means fish are leader-shy; use longer leaders and natural presentations. Topwater can produce well in the protected pool tails early in the morning. Float conditions are good — confirm shuttle logistics with Breezewood Adventures before launching.",
+    desc:"Your closest quality water from the cabin. From Ashton Woods Dr, take Trough Rd north about 4 miles to the entrance on the left — this is the 430-acre McNeill Tract of the South Branch Wildlife Management Area. Pasture land and forest along the river with carry-down access to the South Branch at the upper mouth of The Trough. This is the standard put-in for the 7-mile Trough float. South Branch running 158 CFS — a low mid-November flow; gravel bars are exposed and wading conditions are good; fish are in classic low-water lies along gravel bar edges, in pool tails, and behind boulder structure at the canyon mouth.",
+    note:"The WMA boundary marks the start of The Trough canyon. At 158 CFS wading off the McNeill Tract is comfortable — access the river from the gravel bars and work the seams and pool structure at the canyon mouth carefully. Low, clear water means fish are leader-shy; use longer leaders and natural presentations. Topwater can produce well in the protected pool tails early in the morning. Float conditions are good — confirm shuttle logistics with Breezewood Adventures before launching.",
     warn:null,
     eagle:true,
     snakehead:true,
@@ -235,8 +235,8 @@ const BASS_SPOTS = [
     river:"South Branch Potomac",
     type:"bass",
     tags:[{label:"Float Only",cls:"float"},{label:"Trophy Water",cls:"wild"},{label:"WMA",cls:"wma"}],
-    desc:"Six miles of steep canyon walls with no road access — only a CSX rail line runs alongside. This is the South Branch's crown jewel for smallmouth. Deep pools separated by Class I–II ledge drops hold trophy fish throughout. The canyon was named by George Washington during his 1748 surveying expedition when he gazed in and declared it impassable. People come from all over the world to float this stretch. At 188 CFS the river is running at a low-moderate early-November flow — excellent float and fishing conditions with clear water and fish concentrated in the deeper pool pockets and along classic low-water holding structure.",
-    note:"Guided float trips through Breezewood Adventures in Moorefield (breezeadventures.com) — book 2+ weeks ahead in summer. Plan a full day minimum. At 188 CFS conditions are very good for a Trough float — clear water means fish can be selective; use longer leaders and accurate presentations. Target the deep pool slots, ledge pockets, and seam water along canyon walls. Low water can mean more technical fishing but also excellent sight-fishing opportunities for trophy smallmouth. Trough Club Tract (602 acres, river access only) and Bridge Tract are mid-canyon WMA public land.",
+    desc:"Six miles of steep canyon walls with no road access — only a CSX rail line runs alongside. This is the South Branch's crown jewel for smallmouth. Deep pools separated by Class I–II ledge drops hold trophy fish throughout. The canyon was named by George Washington during his 1748 surveying expedition when he gazed in and declared it impassable. People come from all over the world to float this stretch. At 158 CFS the river is running at a low mid-November flow — excellent float and fishing conditions with clear water and fish concentrated in the deeper pool pockets and along classic low-water holding structure.",
+    note:"Guided float trips through Breezewood Adventures in Moorefield (breezeadventures.com) — book 2+ weeks ahead in summer. Plan a full day minimum. At 158 CFS conditions are very good for a Trough float — clear water means fish can be selective; use longer leaders and accurate presentations. Target the deep pool slots, ledge pockets, and seam water along canyon walls. Low water can mean more technical fishing but also excellent sight-fishing opportunities for trophy smallmouth. Trough Club Tract (602 acres, river access only) and Bridge Tract are mid-canyon WMA public land.",
     warn:null,
     eagle:true,
     snakehead:true,
@@ -246,8 +246,8 @@ const BASS_SPOTS = [
     river:"South Branch Potomac",
     type:"bass",
     tags:[{label:"Public Access",cls:"wma"},{label:"Wade",cls:"wade"}],
-    desc:"Convenient wade access right in Moorefield below the US 220 bridge. Gravel bars and riffle-pool sequences with excellent smallmouth populations. Good topwater water in the morning before heat builds. Less pressure than The Trough but consistent fish to 16 inches. Easy evening session after a day at the cabin. At 188 CFS the flats are running at a low-moderate early-November flow — excellent wading conditions with gravel bars exposed and fish in predictable low-water lies along seams and riffle tailouts.",
-    note:"Park at the WVDNR public access pull-off on the east bank. At 188 CFS wading conditions are comfortable throughout the flats — work the gravel bar edges, riffle tailouts, and the deeper pool pockets below the bridge. Low, clear water rewards stealth and longer leaders; approach fish carefully and work from downstream. The gravel bar structure 200–400 yards below the bridge is fully accessible at this flow.",
+    desc:"Convenient wade access right in Moorefield below the US 220 bridge. Gravel bars and riffle-pool sequences with excellent smallmouth populations. Good topwater water in the morning before heat builds. Less pressure than The Trough but consistent fish to 16 inches. Easy evening session after a day at the cabin. At 158 CFS the flats are running at a low mid-November flow — excellent wading conditions with gravel bars exposed and fish in predictable low-water lies along seams and riffle tailouts.",
+    note:"Park at the WVDNR public access pull-off on the east bank. At 158 CFS wading conditions are comfortable throughout the flats — work the gravel bar edges, riffle tailouts, and the deeper pool pockets below the bridge. Low, clear water rewards stealth and longer leaders; approach fish carefully and work from downstream. The gravel bar structure 200–400 yards below the bridge is fully accessible at this flow.",
     warn:null,
     eagle:false,
     snakehead:true,
@@ -257,8 +257,8 @@ const BASS_SPOTS = [
     river:"South Branch Potomac",
     type:"bass",
     tags:[{label:"Public Road Access",cls:"wma"},{label:"Float Put-In",cls:"float"}],
-    desc:"Classic float put-in for the lower South Branch smallmouth stretch between Moorefield and The Trough. Riffle-to-pool structure with good crayfish habitat on the gravel flats. Overcast days trigger excellent streamer action through this section. Also a strong wading spot from the bridge downstream for 0.5 miles. At 188 CFS expect a leisurely float pace with excellent water clarity and fish in classic low-water holding structure — good conditions for a self-guided float.",
-    note:"Start point for self-guided floats down to the McNeill Tract / Trough entrance. At 188 CFS the float pace will be relaxed — riffle crossings are straightforward and pool structure is well-defined. Confirm shuttle logistics with Breezewood Adventures before launching. Target the deep pool pockets, gravel bar seams, and ledge edges where bass concentrate in low, clear water; longer leaders and subtle presentations will outperform at this flow.",
+    desc:"Classic float put-in for the lower South Branch smallmouth stretch between Moorefield and The Trough. Riffle-to-pool structure with good crayfish habitat on the gravel flats. Overcast days trigger excellent streamer action through this section. Also a strong wading spot from the bridge downstream for 0.5 miles. At 158 CFS expect a leisurely float pace with excellent water clarity and fish in classic low-water holding structure — good conditions for a self-guided float.",
+    note:"Start point for self-guided floats down to the McNeill Tract / Trough entrance. At 158 CFS the float pace will be relaxed — riffle crossings are straightforward and pool structure is well-defined. Confirm shuttle logistics with Breezewood Adventures before launching. Target the deep pool pockets, gravel bar seams, and ledge edges where bass concentrate in low, clear water; longer leaders and subtle presentations will outperform at this flow.",
     warn:null,
     eagle:false,
     snakehead:true,
@@ -268,8 +268,8 @@ const BASS_SPOTS = [
     river:"South Branch Potomac",
     type:"bass",
     tags:[{label:"WMA / Public",cls:"wma"},{label:"Trough Takeout",cls:"float"}],
-    desc:"The northern end of The Trough float in Hampshire County, accessed from Romney via Stringtown Road (CR-8/3) south about 4 miles to Sector, WV. River bottomland with good wade access. If you float The Trough top to bottom, this is your takeout. Also a productive standalone wade spot on the lower canyon water. At 188 CFS the takeout access is straightforward for vehicle and trailer — conditions are good for a Trough float from McNeill Tract.",
-    note:"From Romney: US 220 south 12 miles, left on Stringtown Rd, proceed to Sector. Harrison's access is the alternate takeout slightly downstream — confirm shuttle logistics with Breezewood before you launch. At 188 CFS the current at the takeout is manageable; loading out is straightforward at this flow.",
+    desc:"The northern end of The Trough float in Hampshire County, accessed from Romney via Stringtown Road (CR-8/3) south about 4 miles to Sector, WV. River bottomland with good wade access. If you float The Trough top to bottom, this is your takeout. Also a productive standalone wade spot on the lower canyon water. At 158 CFS the takeout access is straightforward for vehicle and trailer — conditions are good for a Trough float from McNeill Tract.",
+    note:"From Romney: US 220 south 12 miles, left on Stringtown Rd, proceed to Sector. Harrison's access is the alternate takeout slightly downstream — confirm shuttle logistics with Breezewood before you launch. At 158 CFS the current at the takeout is manageable; loading out is straightforward at this flow.",
     warn:null,
     eagle:true,
     snakehead:true,
@@ -279,8 +279,8 @@ const BASS_SPOTS = [
     river:"South Branch Potomac",
     type:"bass",
     tags:[{label:"Float (Spring/Early Summer)",cls:"float"},{label:"Trout + Bass",cls:"wild"}],
-    desc:"One of the only stretches in WV where you can target both trout and smallmouth on the same float. The 21-mile run from Smoke Hole Picnic Area to Petersburg passes through spectacular canyon scenery with massive rock formations. Class I–II+ with one significant rapid (Landslide). Bald eagles nest in this canyon. At 188 CFS on the main stem this is a low-moderate flow — good float conditions with clear water; Class I–II+ features are well-defined and the Landslide rapid is running at a manageable level for experienced paddlers.",
-    note:"Check USGS gauge at Cabins before committing — North Fork at 18.2 CFS is a low flow and the main stem at 188 CFS is running at a low-moderate level. At 188 CFS on the main stem, this float is suitable for experienced paddlers comfortable with clear low-water canyon conditions. Two-to-three-day camping float for the full run; shorter trips possible from road access points along Smoke Hole Rd. Low water means more walking in some shallow riffle sections — plan accordingly.",
+    desc:"One of the only stretches in WV where you can target both trout and smallmouth on the same float. The 21-mile run from Smoke Hole Picnic Area to Petersburg passes through spectacular canyon scenery with massive rock formations. Class I–II+ with one significant rapid (Landslide). Bald eagles nest in this canyon. At 158 CFS on the main stem this is a low mid-November flow — good float conditions with clear water; Class I–II+ features are well-defined and the Landslide rapid is running at a manageable level for experienced paddlers.",
+    note:"Check USGS gauge at Cabins before committing — North Fork at 15.1 CFS is a low flow and the main stem at 158 CFS is running at a low level. At 158 CFS on the main stem, this float is suitable for experienced paddlers comfortable with clear low-water canyon conditions. Two-to-three-day camping float for the full run; shorter trips possible from road access points along Smoke Hole Rd. Low water means more walking in some shallow riffle sections — plan accordingly.",
     warn:"Water temperature unavailable from the gauge — probe with a thermometer before targeting trout. Low, clear water in the upper canyon requires stealth and fine tippet for trout. Scout the Landslide rapid before committing regardless of flow level.",
     eagle:true,
     snakehead:false,
@@ -292,11 +292,11 @@ const REMINDERS = [
   { icon:"🦅", title:"Bald Eagles",              body:"The Trough was the first known modern bald eagle nesting site in WV. You will almost certainly see eagles on a Trough float. They nest in the canyon walls and fish the same pools you do.", cls:"highlight" },
   { icon:"🌡️", title:"Trout Temp Cutoff",        body:"Stop targeting trout above 68°F. Water temperature is unavailable from the gauges today — carry a stream thermometer and check before fishing. The North Fork near Cabins typically runs cooler than the main stem.", cls:"alert" },
   { icon:"🐟", title:"Northern Snakehead",        body:"Invasive northern snakehead is established in the South Branch WMA and Trough section. Do not release if caught — report to WVDNR at 304-637-0245. They are an air-breathing predator and a serious threat to the fishery.", cls:"alert" },
-  { icon:"🛶", title:"Trough Float Logistics",    body:"Float-only canyon — no road egress for 6 miles. Breezewood Adventures (Moorefield) runs shuttles and guided trips. Book 2+ weeks ahead in summer. Bring all food and water for a full day on the water. At current flows (188 CFS) conditions are good — confirm shuttle logistics with Breezewood before launching.", cls:"" },
+  { icon:"🛶", title:"Trough Float Logistics",    body:"Float-only canyon — no road egress for 6 miles. Breezewood Adventures (Moorefield) runs shuttles and guided trips. Book 2+ weeks ahead in summer. Bring all food and water for a full day on the water. At current flows (158 CFS) conditions are good — confirm shuttle logistics with Breezewood before launching.", cls:"" },
   { icon:"🏛️", title:"Historical Note",           body:"George Washington surveyed and named The Trough in 1748, declaring the canyon impassable. In 1756 it was the site of the Battle of the Trough during the French and Indian War.", cls:"" },
   { icon:"☁️", title:"Overcast = Prime Time",     body:"Both smallmouth and trout feed more aggressively under cloud cover. Keep a streamer or popper rod rigged when skies gray up — the bite on The Trough can flip on in minutes.", cls:"" },
   { icon:"🎣", title:"WV Fishing License",         body:"Required for all anglers 15+. Annual license at wvdnr.gov or WVfish.com. No special trout stamp required for stocked streams. Check current South Branch bass regulations — some slot limits may apply.", cls:"" },
-  { icon:"🥾", title:"Wading & Safety",            body:"Trough is float-only — no wading access mid-canyon. McNeill Tract boulders are slick. Felt soles or studs strongly recommended. Never wade The Trough alone in unfamiliar water. At 188 CFS main stem wading conditions are comfortable — exercise normal caution on slick boulder substrate.", cls:"" },
+  { icon:"🥾", title:"Wading & Safety",            body:"Trough is float-only — no wading access mid-canyon. McNeill Tract boulders are slick. Felt soles or studs strongly recommended. Never wade The Trough alone in unfamiliar water. At 158 CFS main stem wading conditions are comfortable — exercise normal caution on slick boulder substrate.", cls:"" },
   { icon:"📋", title:"Private Land",               body:"South Branch corridor has significant private land. Stick to the river corridor while floating. WMA tract boundaries are marked — don't cross fences onto farm fields above the bank.", cls:"" },
 ];
 
@@ -324,20 +324,20 @@ export default function MoorefieldFlyGuide() {
 
       <div className="mg-band">
         <span className="mg-band-label">Hardy County · South Branch</span>
-        <div className="mg-band-item"><div className="mg-dot" /><span>South Branch at Moorefield: 188 CFS · Low-moderate — good wading conditions</span></div>
-        <div className="mg-band-item"><div className="mg-dot" /><span>North Fork at Cabins: 18.2 CFS · Low — best trout option today</span></div>
+        <div className="mg-band-item"><div className="mg-dot" /><span>South Branch at Moorefield: 158 CFS · Low — good wading conditions</span></div>
+        <div className="mg-band-item"><div className="mg-dot" /><span>North Fork at Cabins: 15.1 CFS · Low — best trout option today</span></div>
         <div className="mg-band-item"><div className="mg-dot warn" /><span>Snakehead established — do not release</span></div>
         <div className="mg-band-item"><div className="mg-dot note" /><span>McNeill Tract ~10 min from cabin via Trough Rd</span></div>
-        <span className="mg-band-updated">Last updated: Friday, November 6 2026</span>
+        <span className="mg-band-updated">Last updated: Friday, November 13 2026</span>
       </div>
 
       <div className="mg-hero">
-        <div className="mg-eyebrow">Moorefield, WV · Hardy County · South Branch Watershed · Early November</div>
+        <div className="mg-eyebrow">Moorefield, WV · Hardy County · South Branch Watershed · Mid-November</div>
         <h1>South Branch<br /><em>Field Guide</em></h1>
         <div className="mg-subtitle">The Trough · McNeill Tract · North Fork · Moorefield Flats — West Virginia Highlands</div>
         <div className="mg-stats">
-          <div className="mg-stat"><span className="mg-stat-val">188 CFS</span><span className="mg-stat-lbl">S. Branch at Moorefield</span></div>
-          <div className="mg-stat"><span className="mg-stat-val">18.2 CFS</span><span className="mg-stat-lbl">North Fork at Cabins</span></div>
+          <div className="mg-stat"><span className="mg-stat-val">158 CFS</span><span className="mg-stat-lbl">S. Branch at Moorefield</span></div>
+          <div className="mg-stat"><span className="mg-stat-val">15.1 CFS</span><span className="mg-stat-lbl">North Fork at Cabins</span></div>
           <div className="mg-stat"><span className="mg-stat-val">~10 Min</span><span className="mg-stat-lbl">Cabin to McNeill</span></div>
           <div className="mg-stat"><span className="mg-stat-val">Dawn / Dusk</span><span className="mg-stat-lbl">Prime Windows</span></div>
         </div>
@@ -360,14 +360,14 @@ export default function MoorefieldFlyGuide() {
           {tab === 0 && (
             <>
               <div className="mg-section-head">{species==="trout"?"Trout Daily Schedule":"Smallmouth Daily Schedule"}</div>
-              <div className="mg-section-sub">{species==="trout"?"Early November · S. Branch (188 CFS — low-moderate) · North Fork (18.2 CFS — low, clear) · Water temp is the variable — probe before fishing":"Early November · The Trough, McNeill Tract & Moorefield Flats · S. Branch 188 CFS — low-moderate, good wading"}</div>
+              <div className="mg-section-sub">{species==="trout"?"Mid-November · S. Branch (158 CFS — low) · North Fork (15.1 CFS — low, clear) · Water temp is the variable — probe before fishing":"Mid-November · The Trough, McNeill Tract & Moorefield Flats · S. Branch 158 CFS — low, good wading"}</div>
               {species==="trout" ? (
                 <div className="mg-season-note">
-                  <strong>Early-November trout reality:</strong> The North Fork of the South Branch near Cabins is running at 18.2 CFS — a low and fishable early-November flow with excellent water clarity; fish are concentrated in the deeper pool structure and undercut banks. The main stem at Moorefield is 188 CFS, a low-moderate flow with comfortable wading conditions. Water temperature is unavailable from the gauges — carry a stream thermometer and check frequently. Low, clear water rewards stealth and fine tippet. Dawn and dusk remain the most reliable windows for trout, with improved mid-day prospects as fall temperatures continue to drop.
+                  <strong>Mid-November trout reality:</strong> The North Fork of the South Branch near Cabins is running at 15.1 CFS — a low and fishable mid-November flow with excellent water clarity; fish are concentrated in the deeper pool structure and undercut banks. The main stem at Moorefield is 158 CFS, a low flow with comfortable wading conditions. Water temperature is unavailable from the gauges — carry a stream thermometer and check frequently. Low, clear water rewards stealth and fine tippet. Dawn and dusk remain the most reliable windows for trout, with improved mid-day prospects as fall temperatures continue to drop.
                 </div>
               ) : (
                 <div className="mg-lore">
-                  <strong>Your backyard fishery:</strong> The McNeill Tract WMA is about 10 minutes from the cabin via Trough Rd. The South Branch is running 188 CFS — a low-moderate early-November flow with excellent wading conditions and good water clarity throughout the system. Gravel bars are exposed and fish are in classic low-water lies along pool edges, seams, and behind boulder structure. This is a great day to wade the McNeill Tract or the Moorefield Flats — conditions are also favorable for a Trough float. Confirm shuttle logistics with Breezewood Adventures before launching.
+                  <strong>Your backyard fishery:</strong> The McNeill Tract WMA is about 10 minutes from the cabin via Trough Rd. The South Branch is running 158 CFS — a low mid-November flow with excellent wading conditions and good water clarity throughout the system. Gravel bars are exposed and fish are in classic low-water lies along pool edges, seams, and behind boulder structure. This is a great day to wade the McNeill Tract or the Moorefield Flats — conditions are also favorable for a Trough float. Confirm shuttle logistics with Breezewood Adventures before launching.
                 </div>
               )}
               <div style={{overflowX:"auto"}}>
@@ -390,7 +390,7 @@ export default function MoorefieldFlyGuide() {
 
           {tab === 1 && (
             <>
-              <div className="mg-section-head">{species==="trout"?"Early-November Trout Hatches":"Smallmouth Food Sources"}</div>
+              <div className="mg-section-head">{species==="trout"?"Mid-November Trout Hatches":"Smallmouth Food Sources"}</div>
               <div className="mg-section-sub">{species==="trout"?"North Fork & South Branch · Key imitations":"South Branch, The Trough & McNeill Tract · Primary forage"}</div>
               <div className="mg-hatch-grid">
                 {hatches.map((h,i)=>(
